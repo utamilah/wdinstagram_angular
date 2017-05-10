@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="wdinstagram">
+<html data-ng-app="wdinstagram">
   <head>
     <title>Angular</title>
     <link rel="stylesheet" href="style.css" />
@@ -10,11 +10,8 @@
     <base href="/" />
 
   </head>
-  <body ng-controller="WDInstagramController as vm">
-    <div ng-class="gram" ng-repeat="wdinstagram in vm.wdinstagrams">
-      <img src="{{ wdinstagram.photo_url }}" alt="">
-      <p ng-class="author">{{ wdinstagram.author }}</p>
-      <p ng-class="body">{{ wdinstagram.body }}</p>
-    </div>
+  <body>
+    <h1><a data-ui-sref="entryIndex">WDInstagram</a></h1>
+    <main data-ui-view></main>
   </body>
 </html>

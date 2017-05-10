@@ -1,0 +1,8 @@
+<h2>Grams</h2>
+
+<div class="gram" data-ng-repeat="entry in vm.entries">
+  <img ng-src="{{ entry.photo_url }}" alt="">
+  <p>{{ entry.author }}</p>
+  <p>{{ entry.body }}</p>
+  <p>{{ entry.created_at }}</p>
+</div>
