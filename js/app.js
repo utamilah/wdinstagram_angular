@@ -32,6 +32,12 @@
       controller: 'EntryIndexController',
       controllerAs: 'vm'
     })
+    .state("entryShow", {
+      url: '/entries/:id',
+      templateUrl: 'js/ng-views/show.html',
+      controller: 'EntryShowController',
+      controllerAs: 'vm'
+    })
   }
 
 function EntryIndexControllerFunction(EntryFactory){
